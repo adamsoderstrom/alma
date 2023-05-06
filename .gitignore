@@ -1,7 +1,10 @@
 node_modules
 build
 generated
+
 .env
+*.key
+*.pem
 
 # macOS
 .DS_Store
