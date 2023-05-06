@@ -5,10 +5,9 @@
     "main": "index.js",
     "private": true,
     "scripts": {
-        "dev": "yarn run graphql:generate && webpack serve --mode=development --devtool=inline-source-map",
-        "build": "yarn run graphql:generate && webpack --mode=development --devtool=inline-source-map",
-        "build:prod": "yarn run graphql:generate && webpack --mode=production",
-        "graphql:generate": "graphql-code-generator --config ./codegen.ts"
+        "dev": "yarn run webpack serve --mode=development --devtool=inline-source-map",
+        "build": "yarn run webpack --mode=development --devtool=inline-source-map",
+        "build:prod": "yarn run webpack --mode=production"
     },
     "keywords": [],
     "author": "",
@@ -16,8 +15,6 @@
     "dependencies": {
         "@apollo/client": "^3.7.2",
         "@emotion/css": "^11.7.1",
-        "@graphql-codegen/cli": "^2.16.1",
-        "@graphql-codegen/typescript": "^2.8.5",
         "@thi.ng/shader-ast": "^0.12.29",
         "@thi.ng/shader-ast-glsl": "^0.4.29",
         "@thi.ng/webgl": "^6.2.13",
